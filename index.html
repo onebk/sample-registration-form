@@ -4,43 +4,51 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
   <title>Registration Form</title>
 </head>
 <body>
- <div class="container">
-  <form action="process.php">
-    <label for="anrede">Anrede*</label>
-    <input type="radio">
-    <label for="herr">Herr*</label>
-    <input type="radio">
-    <label for="frau">Frau*</label>
-    <div class="form-group">
-      <label for="vorname">Vorname*</label>
-      <input type="text" id="vname">
-    </div>
-    <div class="form-group">
-      <label for="nachname">Nachname*</label>
-      <input type="text" id="nname">
-    </div>
-    <div class="form-group">
-      <label for="geburtsdatum">Geburtsdatum*</label>
-      <input type="text">
-      <input type="text">
-      <input type="text">
-    </div>
-    <div class="form-group">
-      <label for="strabe">StaBe/Nr.*</label>
-      <input type="text">
-      <input type="text">
-    </div>
-    <div class="form-group">
-      <label for="plz/ort">PLZ/Ort*</label>
-      <input type="text">
-      <input type="text">
+  <div class="container">
+    <form class="main-form">
+      <label for="anrede" class="grid-1">
+        Anrede*
+      </label>
+      <div class="inputgroup radio">
+        <label >
+          <input type="radio" name="anrede" >
+          <label for="herr">Herr</label>
+        </label>
+        <label>
+          <input type="radio" name="anrede" >
+          <label for="frau">Frau</label>
+        </label>
       </div>
-      <button type="button" class="btn"><span>Create Account</span></button>
-  </form>
- </div>
+      <label for="Vorname" class="grid-1">Vorname*</label>
+      <div class="inputgroup">
+        <input type="text" name="vorname" placeholder="Vorname" class="vorname">
+      </div>
+      <label for="vorname" class="grid-1">Nachname*</label>
+      <div class="inputgroup">
+        <input type="text" name="Nachname" placeholder="Nachname" class="nachname">
+      </div>
+      <label for="geburtsdatum" class="grid-1">Geburtsdatum*</label>
+      <div class="inputgroup gtd">
+        <input type="text" name="geburtsdatum" placeholder="TT" >
+        <input type="text" name="geburtsdatum" placeholder="MM">
+        <input type="text" name="geburtsdatum" placeholder="YYYY">
+      </div>
+      <label for="Stra" class="grid-1">StraBe/Nr*</label>
+      <div class="stra">
+        <input type="text" class="Strabe" placeholder="StraBe">
+        <input type="text" class="Nr" placeholder="Nr">
+      </div>
+      <label for="plz" class="grid-1">PLZ/Ort*</label>
+      <div class="code">
+        <input type="text" class="plz" placeholder="PLZ">
+        <input type="text" class="ort" placeholder="Ort">
+      </div>
+      <input type="submit" value="Create Account" class="btn">
+    </form>
+  </div>
 </body>
 </html>

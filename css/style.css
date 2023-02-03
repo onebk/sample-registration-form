@@ -1,46 +1,119 @@
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
-  width: 500px;
-  overflow: auto;
-  padding: 3rem 2rem;
+  padding: 6rem 0;
+  max-width: 600px;
 }
 
-.form-group {
-  margin: 8px auto  ;
-  display: block;
+.main-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 0.5rem;
 }
 
-#form {
- width: 500px;
- padding: 10px;
- font-family: Arial, Helvetica, sans-serif;
-}
-
-#input {
+input {
+  background: #9999;
   width: 100%;
-  padding: 12px 20px;
+  border: 2px solid #777;
+}
+
+label {
+  font-weight: bold;
+  font-size: small;
+}
+
+
+.grid-1 {
+  grid-column: 1;
+  text-align: right;
+  margin-right: 30px;
+}
+.radio {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  padding-bottom: 10px;
+}
+
+.radio label {
+  display: flex;
+}
+
+.nachname, .vorname {
+  padding: 5px;
   margin-bottom: 10px;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
- 
-
- .btn {
-  display: block;
-  padding: 10px 15px;
   width: 100%;
-  border: 0;
+}
+
+.gtd {
+  display: flex;
+  width: 100%;
+  padding-bottom: 10px;
+  
+}
+.gtd input {
+  width:33.3% ;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.stra {
+  display: flex;
+  width: 100%;
+}
+
+.Strabe {
+  width: 70%;
+  margin-right: .5rem;
+  padding: 5px;
+}
+
+.Nr {
+  width: 30%;
+}
+
+.code {
+  display: flex;
+  width: 100%;
+}
+
+.plz {
+  width: 30%;
+  margin-right: .5rem;
+  padding: 5px;
+}
+
+.ort {
+  width: 70%;
+  
+}
+
+.btn {
+  display: inline-block;
+  grid-column: 2;
+  padding: 5px;
+  border: none;
+  color: #fff;
+  background: rgb(0, 128, 111);
+}
+
+.btn:hover {
   color: aqua;
-  border-radius: 5px;
-  margin: 5px o;
- }
-  .btn:hover {
-    background: #add8e6;
-  }
+}
+
+
+
+
